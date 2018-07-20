@@ -72,3 +72,33 @@ gpg --output doc.gpg --symmetric doc
 ```
 gpg --output doc --decrypt doc.gpg
 ```
+## Symmetric Encryption secure password tutorial
+- In linux a good method to generate secure passwords is to use a program called pwgen. Below is the syntax to use to create 20 character passwords that are secure with special characters. 
+```
+pwgen -y -s 20
+```
+- Here is a sample output of the above command:
+```
+(bionic)rootsecdev@localhost:~/Downloads$ pwgen -y -s 20
+;`V'Ewrf+wC?E$*;@0H8 QgMH@0Kf),E&'A&pvpL~ Nzt?NQBXQ;r*4J1]d~-4
+#\'0$H{!`&[8a$s9qNXn qX>5D#~9wVp;Pxb,!|[W sjDYqc4p2.={_]`~"sct
+=qTR}xlwh`ANL`C#-6<T 4;)K1T+rpiCvbvMF?kY4 pwq:6=a`Ag^oars]`v/4
+U|\!V/:w+$|eOPeH("L0 n~A."Fcg=-jfHT1>w^<Q #d0|oZhOC~\]Dhd-g:m>
+x)aZ7N{d>V"Q7VYj%[Fb bLBrwi8anqGIcMPOz}6z qsN@_ajMq8)?[%Tl'HSe
+[hmi7PZ"ehqP1qXJ?iIA 0}kAKoR7ne0ud'Q~Da&c k{AV0$;P,(b98;/$?u|H
+^AWY/mZ7,BwA4.{r:_c} j1/T!?haP?wCP/6sW.e6 iROzbjvC\W195OBGo/2p
+|cJBv:C(hS)n#3#K*]G} hEe1XM6cBF/iyO_:vYC8 }q<5i5@yL%[f`R'<\Jc/
+Wsf9^CQAw6jVe]\$#DnC U*?VEhlhGD."5-1r-iB/ b6g[b2d6PrcgiHt(@n*9
+\7t,TiY,-4nm/RCM<{-l 8&iz&kC_.5%@&[18G>^p YY'etD`BC'(\pT}>11pJ
+FTSv;<7?!QDJUH'|m<7{ @4g]"j})]4nEOk#f.KC@ /aJkuL4tE`{(8Jd`Lohc
+K3{?m:^"x4~kEgKd!SAO +Z!Z4Ppob[4@inFd.4Cv Qzx\-ub<A}|>[nLvu%>8
+0/O?YwZ[+4t9NGf2WBcc FP;2!'jjOepHdSBI%]C/ P3D.QTm&+^XeKBRiI\Az
+nZNAFknz8[w\,&<P65/0 w_j+\$5qPoFcmRlOW(%K E8KFT"]Y>dz%,Z5|62e|
+k}UbPXPU,VG3zU)B-3l$ 2Sqk"FHBY(Z;<8gZl){b KCk}29yXBLn[kW?7OqhH
+F36^|nrCz5me*o-kN3J5 ;l!|@||J1]6s8y&\<Snw Z[4/L&V}5|&pGpz`w?jC
+tXjqSG5:OfB(?m,_w77u p()!i},NcWP4s+33N@c] TN|:AFGHHu2h:jH_qL`d
+6-)i|G$oS<)&?fguwNg` x-7QEd<-'l$x*+}_f\E_ ">yyQToG)\L8ahIJ#Rw!
+Y}Or:;(fFx>RBt,4{.6_ 3#Zmsuv"x&m+}Mmb\>M. FT|qr*Yf[cUmXj2~&W|X
+uws\'+8^%W%&F:1[4"'U oO|BTr]_f~S?I}.7AaM/ _$$W.?LKsOJ{k'uIs2-/
+(bionic)rootsecdev@localhost:~/Downloads$ 
+```
