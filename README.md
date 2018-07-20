@@ -59,6 +59,16 @@ gpg --encrypt --sign --armor -r person@email.com name_of_file
 ```
 gpg --encrypt --sign --armor -r person@email.com -r person2@email.com name_of_file
 ```
-- It is also possible to encrypt without a public key using symmetric encryption
+- Encrypt files without ASCII Armoring. This is useful when sending docs like PDF's, excel spreadsheets...etc..
+```
+gpg --encrypt --sign -r person@email.com name_of_file
+```
+- It is also possible to encrypt without a public key using symmetric encryption. The command below will encrypt a file with a password only. 
 ```
 gpg --output doc.gpg --symmetric doc
+```
+## Decrypting Documents
+- This command will decrypt a document and specify the output. Useful if you want to rename the output of the file. 
+```
+gpg --output doc --decrypt doc.gpg
+```
