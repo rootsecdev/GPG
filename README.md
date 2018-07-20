@@ -50,3 +50,15 @@ gpg --clearsign -o output.txt testfile.txt
 ```
 gpg --verify output.txt
 ```
+## working with GPG encryption (Putting it all together)
+- Encrypt, sign and ACII Armor file. I find this useful when you are encrypting a message consisting of pure text to the receiver of the message. 
+```
+gpg --encrypt --sign --armor -r person@email.com name_of_file
+```
+- To encrypt to multiple receivers. 
+```
+gpg --encrypt --sign --armor -r person@email.com -r person2@email.com name_of_file
+```
+- It is also possible to encrypt without a public key using symmetric encryption
+```
+gpg --output doc.gpg --symmetric doc
