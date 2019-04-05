@@ -50,6 +50,29 @@ gpg --clearsign -o output.txt testfile.txt
 ```
 gpg --verify output.txt
 ```
+
+## How to list and delete public and private keys
+
+- How to list all your keys
+```
+gpg -list-keys
+```
+
+- How to list all your private keys
+```
+gpg --list-secret-keys
+```
+
+- How to delete a public key
+```
+gpg --delete-key "example@example.com"
+```
+
+- How to delete a secret key (private key)
+```
+gpg --delete-secret-key "example@example.com"
+```
+
 ## working with GPG encryption (Putting it all together)
 - Encrypt, sign and ACII Armor file. I find this useful when you are encrypting a message consisting of pure text to the receiver of the message. 
 ```
